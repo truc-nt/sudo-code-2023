@@ -1,0 +1,22 @@
+.hero {
+    position: relative;
+    background-color: #040a4a;
+}
+
+.hero-text {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+}
+
+.hero-img img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+}

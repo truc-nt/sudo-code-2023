@@ -1,0 +1,25 @@
+#about {
+    background-color: #f6f9fc;
+}
+
+#about .row {
+    align-items: flex-start;
+}
+
+#about h3 {
+    margin-top: 0;
+}
+
+.about-img {
+    width: 70%;
+}
+
+.about-item {
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.about-item img {
+    width: 70px;
+    height: auto;
+}

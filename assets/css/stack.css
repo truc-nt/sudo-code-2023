@@ -1,0 +1,29 @@
+#stack {
+    background-color: #020953;
+}
+
+#stack > p {
+    text-align: center;
+}
+
+#stack * {
+    color: white !important;
+}
+
+#stack .row {
+    gap: 20px;
+}
+
+.stack-item {
+    text-align: center;
+    border: 1px solid white;
+    max-width: 200px;
+    padding: 20px;
+}
+.stack-img {
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    display: block;
+    margin: auto;
+}
