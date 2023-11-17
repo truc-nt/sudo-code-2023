@@ -1,0 +1,33 @@
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+@media (min-width: 768px) {
+    .flex-row-md {
+        flex-direction: row;
+    }
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/*JUSTIFY*/
+.justify-center {justify-content: center;}
+.justify-between {justify-content: space-between;}
+.justify-around {justify-content: space-around;}
+
+/*ALIGN*/
+.items-center {align-items: center;}
+
+/*GAP*/
+.gap-5 {gap: 1.25rem;} /* 20px */
+

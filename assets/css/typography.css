@@ -1,0 +1,22 @@
+/*ALIGN*/
+.text-center {
+    text-align: center;
+}
+
+/*COLOR*/
+.text-white {
+    color: #fff;
+}
+
+.text-blue {
+    color: #040a4a;
+}
+
+/*BACKGROUND*/
+.bg-blue {
+    background-color: #040a4a;
+}
+
+.bg-white {
+    background-color: white;
+}

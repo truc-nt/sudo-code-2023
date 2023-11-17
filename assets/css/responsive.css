@@ -1,0 +1,6 @@
+/*MOBILE*/
+@media (min-width: 320px) {
+    .w-sm-12 {
+        width: 100%;
+    }
+}

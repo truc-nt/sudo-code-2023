@@ -1,0 +1,10 @@
+/*WIDTH*/
+.border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+/*COLOR*/
+.border-white {
+    border-color: white;
+}

@@ -2,236 +2,236 @@
 <html>
 <head>
     <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/sizing.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/typography.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/spacing.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/flexbox.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/border.css">
     <link rel="stylesheet" type="text/css" href="assets/css/base.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/hero.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/service.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/stack.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/case-study.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/blog.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
 <body>
-    <header>
-        <nav class="container">
-            <div class="row header-nav">
-                <div class="col-2 header-logo">
-                    <div class="logo">
-                        <img src="assets/img/logo.png" alt="Logo" class="logo-img">
-                    </div>
-                </div>
-                <ul class="col-8 row">
-                    <li><a href="assets/css/#"><p>Home</p></a></li>
-                    <li><a href="assets/css/#service"><p>Services</p></a></li>
-                    <li><a href="assets/css/#about"><p>About</p></a></li>
-                    <li><a href="assets/css/#case-study"><p>Case Study</p></a></li>
-                    <li><a href="assets/css/#blog"><p>Blog</p></a></li>
-                    <li><a href="assets/css/#contact"><p>Contact</p></a></li>
+    <header class="container bg-blue">
+        <nav>
+            <div class="d-flex flex-wrap items-center justify-center">
+                <span class="w-md-2">
+                    <img src="assets/img/logo.png" alt="Logo">
+                </span>
+                <ul class="w-12 w-md-8 d-flex flex-column flex-row-md gap-5 text-white text-center">
+                        <li><a href="#home"><p>Home</p></a></li>
+                        <li><a href="#service"><p>Services</p></a></li>
+                        <li><a href="#about"><p>About</p></a></li>
+                        <li><a href="#case-study"><p>Case Study</p></a></li>
+                        <li><a href="#blog"><p>Blog</p></a></li>
+                        <li><a href="#contact"><p>Contact</p></a></li>
                 </ul>
-                <div class="col-2 header-button">
+                <div class="w-md-2">
                     <button>Get Free Quote</button>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="container hero">
-            <div class="hero-img">
-                <img src="assets/img/hero-img.png" alt="Hero Image">
-            </div>
-            <div class="hero-text">
-                <h1>We provide best IT solution</h1>
+        <section id="hero" class="container d-flex flex-column flex-row-md flex-wrap items-center text-white bg-blue">
+            <div class="w-12 w-md-5">
+                <h1 class="text-white">We provide best IT solution</h1>
                 <p>Naxly bring the power of data science and artificial intelligence to every business</p>
                 <button>Our Services</button>
             </div>
+            <div class="w-12 w-md-7">
+                <img class="w-12" src="assets/img/hero-img.png" alt="Hero Image">
+            </div>
         </section>
-        <section id="service" class="container">
+        <section id="service" class="container text-center">
             <h6>Our services</h6>
-            <h2>IT solutions for startup </br> and enterprises</h2>
-            <div class="row">
-                <div class="col">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="assets/img/services1.svg" alt="Service Image">
+            <h1>IT solutions for startup </br> and enterprises</h1>
+            <div class="d-flex flex-column flex-row-md items-center justify-center">
+                <div class="">
+                    <div class="service-img">
+                        <img class="w-12" src="assets/img/services1.svg" alt="Service Image">
+                    </div>
+                    <h2>Manage IT services</h2>
+                    <p>Naxly bring the power of data science and artificial intelligence to every business</p>
+                </div>
+                <div class="">
+                    <div class="service-img">
+                        <img class="w-12" src="assets/img/services2.svg" alt="Service Image">
+                    </div>
+                    <h2>Manage IT services</h2>
+                    <p>Naxly bring the power of data science and artificial intelligence to every business</p>
+                </div>
+                <div class="">
+                    <div class="service-img">
+                        <img class="w-12" src="assets/img/services3.svg" alt="Service Image">
+                    </div>
+                    <h2>Manage IT services</h2>
+                    <p>Naxly bring the power of data science and artificial intelligence to every business</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="container d-flex flex-column flex-row-md justify-between relative" style="background-color: #f6f9fc">
+            <div class="w-12 w-md-5">
+                <div class="relative">
+                    <img class="w-12" src="assets/img/about1.jpg" alt="About Image">
+                    <div class="absolute bg-white p-3 w-8" style="top: 60%; left: 90%; transform: translate(-50%, -50%);">
+                        <div class="d-flex gap-5">
+                            <div class="w-2">
+                                <img src="assets/img/notification.svg" alt="Service Image">
+                            </div>
+                            <div class="w-10">
+                                <h2 class="mt-0">New Features</h2>
+                                <p>You have received notifications</p>
+                            </div>
                         </div>
-                        <h3>Manage IT services</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="w-12 w-md-5">
+                <h1 class="mt-0">Grow your <br/> business fast</h1>
+                <div class="d-flex gap-5">
+                    <div class="w-2">
+                        <img class="w-12" src="assets/img/notification1.svg" alt="Service Image">
+                    </div>
+                    <div class="w-10">
+                        <h2 class="mt-0">Engage Teammates</h2>
                         <p>Naxly bring the power of data science and artificial intelligence to every business</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="assets/img/services2.svg" alt="Service Image">
-                        </div>
-                        <h3>Manage IT services</h3>
-                        <p>Naxly bring the power of data science and artificial intelligence to every business</p>
+                <div class="d-flex gap-5">
+                    <div class="w-2">
+                        <img class="w-12" src="assets/img/notification1.svg" alt="Service Image">
                     </div>
-                </div>
-                <div class="col">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="assets/img/services3.svg" alt="Service Image">
-                        </div>
-                        <h3>Manage IT services</h3>
+                    <div class="w-10">
+                        <h2 class="mt-0">Level Up Productivity</h2>
                         <p>Naxly bring the power of data science and artificial intelligence to every business</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about" class="container">
-            <div class="row">
-                <div class="col-7">
-                    <div class="about-img">
-                        <img src="assets/img/about1.jpg" alt="About Image">
+        <section id="stack" class="container bg-blue text-white">
+            <div class="d-flex flex-column flex-row-md justify-between">
+                <div class="w-12 w-md-5">
+                    <div>
+                        <h6>Industries We Serve</h6>
+                        <h1 class="text-white">IT services customized </br> for your industry</h1>
                     </div>
                 </div>
-                <div class="col-5">
-                    <h2>Grow your <br/> business fast</h2>
-                    <div class="about-item row">
-                        <div class="col-1 about-img">
-                            <img src="assets/img/notification1.svg" alt="Service Image">
-                        </div>
-                        <div class="col-11">
-                            <h3>Engage Teammates</h3>
-                            <p>Naxly bring the power of data science and artificial intelligence to every business</p>
-                        </div>
-                    </div>
-                    <div class="about-item row">
-                        <div class="col-1 about-img">
-                            <img src="assets/img/notification1.svg" alt="Service Image">
-                        </div>
-                        <div class="col-11">
-                            <h3>Level Up Productivity</h3>
-                            <p>Naxly bring the power of data science and artificial intelligence to every business</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="stack" class="container">
-            <div class="row">
-                <div class="col-7">
-                    <h6>Industries We Serve</h6>
-                    <h2>IT services customized </br> for your industry</h2>
-                </div>
-                <div class="col-5">
+                <div class="w-12 w-md-5">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="stack-item">
-                        <div class="stack-img">
-                            <img src="assets/img/stack1.svg" alt="Service Image">
-                        </div>
-                        <h4>Industries & Manufacturing</h4>
+            <div class="d-flex flex-column flex-row-md text-center items-center" style="gap: 20px;">
+                <div class="p-6 border border-white">
+                    <div class="">
+                        <img src="assets/img/stack1.svg" alt="Service Image">
                     </div>
+                    <h4>Industries & Manufacturing</h4>
                 </div>
-                <div class="col">
-                    <div class="stack-item">
-                        <div class="stack-img">
-                            <img src="assets/img/stack2.svg" alt="Service Image">
-                        </div>
-                        <h4>Industries & Manufacturing</h4>
+                <div class="p-6 border border-white">
+                    <div class="">
+                        <img src="assets/img/stack2.svg" alt="Service Image">
                     </div>
+                    <h4>Industries & Manufacturing</h4>
                 </div>
-                <div class="col">
-                    <div class="stack-item">
-                        <div class="stack-img">
-                            <img src="assets/img/stack3.svg" alt="Service Image">
-                        </div>
-                        <h4>Industries & Manufacturing</h4>
+                <div class="p-6 border border-white">
+                    <div class="">
+                        <img src="assets/img/stack3.svg" alt="Service Image">
                     </div>
+                    <h4>Industries & Manufacturing</h4>
                 </div>
-                <div class="col">
-                    <div class="stack-item">
-                        <div class="stack-img">
-                            <img src="assets/img/stack4.svg" alt="Service Image">
-                        </div>
-                        <h4>Industries & Manufacturing</h4>
+                <div class="p-6 border border-white">
+                    <div class="">
+                        <img src="assets/img/stack4.svg" alt="Service Image">
                     </div>
+                    <h4>Industries & Manufacturing</h4>
                 </div>
             </div>
-            <p>Need a Technology support? Get started now!</p>
+            <p class="text-center">Need a Technology support? <a style="text-decoration: underline;">Get started now!</a></p>
         </section>
-        <section id="case-study" class="container">
-            <h2>ITKol-Partner for your Business</h2>
+        <section id="case-study" class="container text-center">
+            <h1>ITKol-Partner for your Business</h1>
             <p>Naxly is a global software consultancy solving complex problems with technology. We connect strategy and execution, helping our clients to strengthen their core technology, scale with flexibility and create seamless digital experiences.</p>
             <button>Request a Quote</button>
-            <div class="row">
-                <div class="col">
-                    <h3>2500+</h3>
+            <div class="d-flex flex-column flex-row-md">
+                <div class="w-12">
+                    <h2>2500+</h2>
                     <p>Naxly bring the power of data science and artificial intelligence to every business</p>
                 </div>
-                <div class="col">
-                    <h3>350+</h3>
+                <div class="w-12">
+                    <h2>350+</h2>
                     <p>Naxly bring the power of data science and artificial intelligence to every business</p>
                 </div>
-                <div class="col">
-                    <h3>20+</h3>
-                    <p>Naxly bring the power of data science and artificial intelligence to every business</p>
-                </div>
-            </div>
-        </section>
-        <section id="blog" class="container">
-            <h2>Some of Our Great Stuffs</h2>
-            <div class="row">
-                <div class="col blog-item">
-                    <img src="assets/img/stuffs1.jpg" alt="Stuffs1 Image">
-                    <p>Naxly bring the power of data science and artificial intelligence to every business</p>
-                </div>
-                <div class="col blog-item">
-                    <img src="assets/img/stuffs2.jpg" alt="Stuffs2 Image">
-                    <p>Naxly bring the power of data science and artificial intelligence to every business</p>
-                </div>
-                <div class="col blog-item">
-                    <img src="assets/img/stuffs3.jpg" alt="Stuffs3 Image">
+                <div class="w-12">
+                    <h2>20+</h2>
                     <p>Naxly bring the power of data science and artificial intelligence to every business</p>
                 </div>
             </div>
         </section>
-        <section>
-            <img src="assets/img/section_bg01.jpg">
-        </section>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <p>Naxly is a global software consultancy solving complex problems with technology</p>
-                        <h4>10 (87) 738-3940</h4>
-                        <p>contact@it-kol.com</p>
-                    </div>
-                    <div class="col-2">
-                        <p>Navigation</p>
-                        <ul>
-                            <li><a href="assets/css/#"><p>Home</p></a></li>
-                            <li><a href="assets/css/#"><p>About</p></a></li>
-                            <li><a href="assets/css/#"><p>Services</p></a></li>
-                            <li><a href="assets/css/#"><p>Blog</p></a></li>
-                            <li><a href="assets/css/#"><p>Contact</p></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <p>Services</p>
-                        <ul>
-                            <li><p>Drone Mapping</p></li>
-                            <li><p>Real State</p></li>
-                            <li><p>Commercial</p></li>
-                            <li><p>Construction</p></li>
-                        </ul>
-                    </div>
-                    <div class="col-4">
-                        <p>Subscribe newsletter</p>
-                        <p>Subscribe our newsletter to get updates about our services and offers</p>
-                        <input type="email" id="email" name="email" placeholder="Email Address"/>
-                        <div>
-                            <i class="fas fa-brands fa-facebook" style="color: red;"></i>
-                        </div>
-                    </div>
+        <hr>
+        <section id="blog" class="container text-center">
+            <h1>Some of Our Great Stuffs</h1>
+            <div class="d-flex flex-column flex-row-md items-center">
+                <div class="p-6">
+                    <img class="w-12" src="assets/img/stuffs1.jpg" alt="Stuffs1 Image">
+                    <p>Naxly bring the power of data science and artificial intelligence to every business</p>
+                </div>
+                <div class="p-6">
+                    <img class="w-12" src="assets/img/stuffs2.jpg" alt="Stuffs2 Image">
+                    <p>Naxly bring the power of data science and artificial intelligence to every business</p>
+                </div>
+                <div class="p-6">
+                    <img class="w-12" src="assets/img/stuffs3.jpg" alt="Stuffs3 Image">
+                    <p>Naxly bring the power of data science and artificial intelligence to every business</p>
                 </div>
             </div>
-        </footer>
+        </section>
+        <section class="relative">
+            <img class="w-12" src="assets/img/section_bg01.jpg">
+            <div class="absolute text-center d-none d-block-lg" style="top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                <h1>Innovation IT Solution for your </br> Business & Startup</h1>
+                <button class="bg-white" style="color:#ff4f8c">Get Started now</button>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container d-flex flex-column flex-row-md">
+            <div class="w-12 w-md-4">
+                <p>Naxly is a global software consultancy solving complex problems with technology</p>
+                <h4>10 (87) 738-3940</h4>
+                <p>contact@it-kol.com</p>
+            </div>
+            <div class="w-12 w-md-2">
+                <p class="text-blue">Navigation</p>
+                <ul>
+                    <li><a href="assets/css/#"><p>Home</p></a></li>
+                    <li><a href="assets/css/#"><p>About</p></a></li>
+                    <li><a href="assets/css/#"><p>Services</p></a></li>
+                    <li><a href="assets/css/#"><p>Blog</p></a></li>
+                    <li><a href="assets/css/#"><p>Contact</p></a></li>
+                </ul>
+            </div>
+            <div class="w-12 w-md-2">
+                <p class="text-blue">Services</p>
+                <ul>
+                    <li><p>Drone Mapping</p></li>
+                    <li><p>Real State</p></li>
+                    <li><p>Commercial</p></li>
+                    <li><p>Construction</p></li>
+                </ul>
+            </div>
+            <div class="w-12 w-md-4">
+                <p class="text-blue">Subscribe newsletter</p>
+                <p>Subscribe our newsletter to get updates about our services and offers</p>
+                <input type="email" id="email" name="email" placeholder="Email Address"/>
+                <div class="d-flex" style="gap: 10px; margin-top: 10px;">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            <div>
+        </div>
+    </footer>
 </body>
 </html>

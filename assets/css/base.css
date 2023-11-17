@@ -1,85 +1,96 @@
-img {
-    width: 100%;
-    height: auto;
-
-}
 body {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body > * {
-    width: 100vw;
-}
-
-section, footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-section > div {
-    margin-bottom: 20px;
-}
-
-button {
-    padding: 15px 30px;
-    border-radius: 20px;
-    border: none;
-}
-
-.container {
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /*justify-content: space-between;
-    align-items: center;*/
-}
-
-.col, .col-1 {flex: 1;}
-.col-2 {flex: 2;}
-.col-3 {flex: 3;}
-.col-4 {flex: 4;}
-.col-5 {flex: 5;}
-.col-6 {flex: 6;}
-.col-7 {flex: 7;}
-.col-8 {flex: 8;}
-.col-11{flex: 11;}
-
-h1 {
-    line-height: 60px;
-}
-
-h2 {
-    line-height: 50px;
-}
-
-h2, h3 {
-    color: #222f54;
-}
-
-h6 {
-    color: #ff4495;
-}
-
-p {
-    line-height: 20px;
-    font-size: 14px;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+h1 {
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color: #040a4a;
+}
+
+h2 {
+    color: #040a4a;
+}
+
+h6 {
+    color: #ff4f8c;
+}
+
+p {
+    line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+    header.container {
+        padding: 2rem 8rem;
+    }
+}
+
+@media (min-width: 1024px) { 
+    header.container {
+        padding: 2rem 12rem;
+    }
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+}
+
+/*HEADER*/
+header button {
+    background-color: transparent;
+    color: #fff; 
+    border: 2px solid #fff;
+}
+
+/*HERO*/
+#hero button {
+    background-image: linear-gradient(#ff4f8c, #fe6575);
+    color: #fff; 
+}
+
+/*SERVICES*/
+#services img {
+    background-color: #040a4a;
+    color: #fff; 
+}
+
+.service-img {
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+}
+
+/*CASE STUDY*/
+#case-study button {
+    background-color: transparent;
+    color: #ff4f8c; 
+    border: 2px solid #ff4f8c;
+}
+
+/*FOOTER*/
+footer input {
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 100%;
 }
