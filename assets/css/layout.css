@@ -6,12 +6,6 @@
     display: none;
 }
 
-@media (min-width: 320px) {
-    .container {
-        padding: 3rem 6rem;
-    }
-}
-
 @media (min-width: 768px) {
     .container {
         padding: 4rem 8rem;

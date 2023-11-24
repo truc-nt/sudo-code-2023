@@ -10,23 +10,27 @@
     <link rel="stylesheet" type="text/css" href="assets/css/border.css">
     <link rel="stylesheet" type="text/css" href="assets/css/base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
 <body>
     <header class="container bg-blue">
         <nav>
             <div class="d-flex flex-wrap items-center justify-center">
-                <span class="w-md-2">
+                <div class="w-4 hamburger">
+                    <i class="fas fa-bars text-white"></i>
+                </div>
+                <span class="w-4 w-md-2">
                     <img src="assets/img/logo.png" alt="Logo">
                 </span>
-                <ul class="w-12 w-md-8 d-flex flex-column flex-row-md gap-5 text-white text-center">
-                        <li><a href="#home"><p>Home</p></a></li>
-                        <li><a href="#service"><p>Services</p></a></li>
-                        <li><a href="#about"><p>About</p></a></li>
-                        <li><a href="#case-study"><p>Case Study</p></a></li>
-                        <li><a href="#blog"><p>Blog</p></a></li>
-                        <li><a href="#contact"><p>Contact</p></a></li>
-                </ul>
-                <div class="w-md-2">
+                <div class="w-12 w-md-8 menu">
+                    <ul class="d-flex flex-column flex-row-md gap-5 text-white text-center">
+                            <li><a href="#home"><p>Home</p></a></li>
+                            <li><a href="#service"><p>Services</p></a></li>
+                            <li><a href="#about"><p>About</p></a></li>
+                            <li><a href="#case-study"><p>Case Study</p></a></li>
+                            <li><a href="#blog"><p>Blog</p></a></li>
+                            <li><a href="#contact"><p>Contact</p></a></li>
+                    </ul>
+                </div>
+                <div class="w-4 w-md-2">
                     <button>Get Free Quote</button>
                 </div>
             </div>
@@ -223,7 +227,11 @@
             <div class="w-12 w-md-4">
                 <p class="text-blue">Subscribe newsletter</p>
                 <p>Subscribe our newsletter to get updates about our services and offers</p>
-                <input type="email" id="email" name="email" placeholder="Email Address"/>
+                <form onsubmit="return handleSubmit(event);">
+                    <input class="mb-3" id="email" name="email" placeholder="Email Address"/>
+                    <input class="mb-3" id="phone" name="phone" placeholder="Phone number"/>
+                    <button type="submit" value="Submit">Submit</button>
+                </form>
                 <div class="d-flex" style="gap: 10px; margin-top: 10px;">
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-instagram"></i>
@@ -233,5 +241,7 @@
             <div>
         </div>
     </footer>
+    <script src="assets/js/validate.js"></script>
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>

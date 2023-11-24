@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -58,6 +66,30 @@ header button {
     border: 2px solid #fff;
 }
 
+.hamburger {
+    display: block;
+}
+
+.menu {
+    display: none;
+    order: 4;
+}
+
+.menu.active {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: block;
+        order: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
 /*HERO*/
 #hero button {
     background-image: linear-gradient(#ff4f8c, #fe6575);
@@ -71,8 +103,8 @@ header button {
 }
 
 .service-img {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     padding: 20px;
     background-color: white;
     border-radius: 50%;
